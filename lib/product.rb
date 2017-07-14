@@ -1,8 +1,11 @@
 class Product
-  attr_accessor :price, :count
+  attr_accessor :price, :count, :title
 
-  def initialize(price = nil, count = nil)
-    @price = price unless price == nil
-    @count = count unless price == nil
+  def initialize(params={})
+    @params = params
+  end
+
+  def update(update_params={})
+    params.update(update_params)
   end
 end
