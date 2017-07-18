@@ -25,10 +25,4 @@ class Product
     end
     self
   end
-
-  # def to_hash
-  #   instance_variables.map do |var|
-  #     [var.to_sym, instance_variable_get(var)]
-  #   end.to_h
-  # end
 end

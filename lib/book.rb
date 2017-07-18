@@ -20,7 +20,7 @@ class Book < Product
   end
 
   def self.from_file(path_to_file)
-     Book.new(give_book_params(path_to_file))
+    Book.new(give_book_params(path_to_file))
   end
 
   def to_s

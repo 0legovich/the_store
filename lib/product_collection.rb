@@ -13,11 +13,11 @@ class ProductCollection
       raise "Не найдено ни одного каталога с продуктами"
     end
 
-    ProductCollection.new({
+    new({
         films: Dir[paths[:films] + '/*.txt'].map { |item| Film.from_file(item) },
         books: Dir[paths[:books] + '/*.txt'].map { |item| Book.from_file(item) },
         disks: Dir[paths[:disks] + '/*.txt'].map { |item| CompactDisk.from_file(item) }
-                                       })
+         })
   end
 
   def to_a
